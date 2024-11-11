@@ -9,13 +9,13 @@ const scissors = "scissors";
 let randomChoice = Math.floor(Math.random()*3);
 
 function getComputerChoice(){
-    if ( randomChoice === 0 ) {
-        return(rock);
-    } else if ( randomChoice === 1 ){
-        return(paper);
-    } else {
-        return(scissors);
-    }
+        if ( randomChoice === 0 ) {
+            return(rock);
+        } else if ( randomChoice === 1 ){
+            return(paper);
+        } else {
+            return(scissors);
+        }
 }
 
 // Human's choice
@@ -23,8 +23,9 @@ function getComputerChoice(){
 let userInput = prompt("What is your choice? :");
 
 function getHumanChoice(){
-    return userInput;
+    return userInput.toLowerCase();
 }
 
 let humanScore = 0;
 let computerScore = 0;
+
