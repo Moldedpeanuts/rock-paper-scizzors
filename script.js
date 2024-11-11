@@ -1,14 +1,18 @@
 console.log("Welcome to Rock-Paper-Scissors in the console!")
 
-const rock = "rock";
-const paper = "paper";
-const scissors = "scissors";
+// Playing 5 rounds
 
-// Computer's choice
+function playGame() {
 
-let randomChoice = Math.floor(Math.random() * 3);
+    const rock = "rock";
+    const paper = "paper";
+    const scissors = "scissors";
 
-function getComputerChoice() {
+    // Computer's choice
+
+    let randomChoice = Math.floor(Math.random() * 3);
+
+    function getComputerChoice() {
     if (randomChoice === 0) {
         return (rock);
     } else if (randomChoice === 1) {
@@ -16,19 +20,16 @@ function getComputerChoice() {
     } else {
         return (scissors);
     }
-}
+    }
 
-// Human's choice
+    // Human's choice
 
-let userInput = prompt("What is your choice? :");
+    let userInput = prompt("What is your choice? :");
 
-function getHumanChoice() {
+    function getHumanChoice() {
     return userInput.toLowerCase();
-}
+    }
 
-// Playing 5 rounds
-
-function playGame() {
 
     let humanScore = 0;
     let computerScore = 0;
@@ -65,12 +66,12 @@ function playGame() {
     const computerSelection = getComputerChoice();
 
     playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
-    playRound(humanSelection, computerSelection);
 }
 
+playGame();
+playGame();
+playGame();
+playGame();
 playGame();
 
 
