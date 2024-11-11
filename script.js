@@ -1,5 +1,8 @@
 console.log("Welcome to Rock-Paper-Scissors in the console!")
 
+let humanScore = 0;
+let computerScore = 0;
+
 // Playing 5 rounds
 
 function playGame() {
@@ -29,10 +32,6 @@ function playGame() {
     function getHumanChoice() {
     return userInput.toLowerCase();
     }
-
-
-    let humanScore = 0;
-    let computerScore = 0;
 
     function playRound(humanChoice, computerChoice) {
         if (humanChoice === "rock" && computerChoice === "rock") {
@@ -68,8 +67,9 @@ function playGame() {
 
     playRound(humanSelection, computerSelection);
 
-    console.log(`You:${humanScore} Computer: ${computerScore}`);
 
+    console.log(`You:${humanScore} Computer: ${computerScore}`);
+    
 }
 
 playGame();
