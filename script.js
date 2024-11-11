@@ -32,5 +32,8 @@ let computerScore = 0;
 // Playing one round
 
 function playRound(humanChoice, computerChoice) {
-    
+
 }
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
