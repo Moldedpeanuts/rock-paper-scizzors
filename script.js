@@ -17,3 +17,7 @@ function getComputerChoice(){
         return(scissors);
     }
 }
+
+// Human's choice
+
+let userInput = prompt("What is your choice? :");
