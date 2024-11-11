@@ -37,28 +37,36 @@ function playGame() {
     function playRound(humanChoice, computerChoice) {
         if (humanChoice === "rock" && computerChoice === "rock") {
             console.log("It's a tie! Computer also chose rock");
+            console.log("You: " + "" +`${humanScore}` + "Computer: " + `${computerScore}`);
         } else if (humanChoice === "paper" && computerChoice === "paper") {
             console.log("It's a tie! Computer also chose paper");
+            console.log("You: " + "" +`${humanScore}` + "Computer: " + `${computerScore}`);
         } else if (humanChoice === "scissors" && computerChoice === "scissors") {
             console.log("It's a tie! Computer also chose scissors")
+            console.log("You: " + "" +`${humanScore}` + "Computer: " + `${computerScore}`);
         } else if (humanChoice === "paper" && computerChoice === "rock") {
             console.log("You win! Paper beats rock!");
             humanScore++;
+            console.log("You: " + "" +`${humanScore}` + "Computer: " + `${computerScore}`);
         } else if (humanChoice === "scissors" && computerChoice === "rock") {
             console.log("You lose! Rock beats scissors!")
             computerScore++;
+            console.log("You: " + "" +`${humanScore}` + "Computer: " + `${computerScore}`);
         } else if (humanChoice === "rock" && computerChoice === "paper") {
             console.log("You lose! Paper beats rock!");
             computerScore++;
+            console.log("You: " + "" +`${humanScore}` + "Computer: " + `${computerScore}`);
         } else if (humanChoice === "scissors" && computerChoice === "paper") {
             console.log("You win! Scissors beat paper!");
             humanScore++;
         } else if (humanChoice === "rock" && computerChoice === "scissors") {
             console.log("You win! Rock beats scissors!");
             humanScore++;
+            console.log("You: " + "" +`${humanScore}` + "Computer: " + `${computerScore}`);
         } else if (humanChoice === "paper" && computerChoice === "scissors") {
             console.log("You lose! Scissors beat paper!");
             computerScore++;
+            console.log("You: " + "" +`${humanScore}` + "Computer: " + `${computerScore}`);
         }
     }
 
