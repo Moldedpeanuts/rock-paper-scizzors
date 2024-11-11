@@ -70,6 +70,15 @@ function playGame() {
 
     console.log(`You:${humanScore} Computer: ${computerScore}`);
     
+    let endGame = () => {
+        if (humanScore > computerScore) {
+            console.log("You win the game!");
+        } else if(humanScore < computerScore) {
+            console.log("You lose the game..");
+        } else {
+            console.log("It's a tie!");
+        }
+    }
 }
 
 playGame();
