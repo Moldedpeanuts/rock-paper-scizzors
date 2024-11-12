@@ -16,13 +16,13 @@ function playGame() {
     let randomChoice = Math.floor(Math.random() * 3);
 
     function getComputerChoice() {
-    if (randomChoice === 0) {
+        if (randomChoice === 0) {
         return (rock);
-    } else if (randomChoice === 1) {
+        } else if (randomChoice === 1) {
         return (paper);
-    } else {
+        } else {
         return (scissors);
-    }
+        }
     }
 
     // Human's choice
@@ -62,7 +62,6 @@ function playGame() {
             computerScore++;
         }
     }
-
 
     const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
