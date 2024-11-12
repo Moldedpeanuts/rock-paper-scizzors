@@ -17,11 +17,11 @@ function playGame() {
 
     function getComputerChoice() {
         if (randomChoice === 0) {
-        return (rock);
+            return (rock);
         } else if (randomChoice === 1) {
-        return (paper);
+            return (paper);
         } else {
-        return (scissors);
+            return (scissors);
         }
     }
 
