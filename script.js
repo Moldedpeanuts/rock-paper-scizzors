@@ -70,9 +70,7 @@ function playGame() {
     playRound(humanSelection, computerSelection);
 
 
-    console.log(`You:${humanScore} Computer: ${computerScore}`);
-
-    
+    console.log(`You: ${humanScore} Computer: ${computerScore}`);
 }
 
 playGame();
