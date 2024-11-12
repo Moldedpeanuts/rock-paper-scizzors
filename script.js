@@ -30,7 +30,7 @@ function playGame() {
     let userInput = prompt("What is your choice? :");
 
     function getHumanChoice() {
-    return userInput.toLowerCase();
+        return userInput.toLowerCase();
     }
 
     // Playing a single round
