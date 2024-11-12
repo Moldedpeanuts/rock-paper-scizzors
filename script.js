@@ -33,6 +33,8 @@ function playGame() {
     return userInput.toLowerCase();
     }
 
+    // Playing a single round
+
     function playRound(humanChoice, computerChoice) {
         if (humanChoice === "rock" && computerChoice === "rock") {
             console.log("It's a tie! Computer also chose rock");
@@ -69,16 +71,8 @@ function playGame() {
 
 
     console.log(`You:${humanScore} Computer: ${computerScore}`);
+
     
-    let endGame = () => {
-        if (humanScore > computerScore) {
-            console.log("You win the game!");
-        } else if(humanScore < computerScore) {
-            console.log("You lose the game..");
-        } else {
-            console.log("It's a tie!");
-        }
-    }
 }
 
 playGame();
