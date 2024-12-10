@@ -53,7 +53,11 @@ let humanSelection;
 
 const btns = document.querySelectorAll("button");
 
-
+btns.forEach(button => {
+    button.addEventListener('click', () => {
+        humanSelection = button.textContent;
+    });
+});
 
 
 
