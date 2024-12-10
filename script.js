@@ -21,9 +21,6 @@ function getComputerChoice() {
     }
 }
 
-const btn = document.querySelector("button");
-
-
 // Playing a single round
 
 function playRound(humanChoice, computerChoice) {
@@ -51,6 +48,9 @@ function playRound(humanChoice, computerChoice) {
 }
 
 const computerSelection = getComputerChoice();
+const btn = document.querySelectorAll("button");
+
+btn.addEventListener('click', playRound);
 
 
 console.log(`You: ${humanScore} Computer: ${computerScore}`);
