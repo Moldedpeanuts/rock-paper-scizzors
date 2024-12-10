@@ -7,11 +7,11 @@ let computerScore = 0;
 
 function playGame() {
 
+    // Computer's choice
     const rock = "rock";
     const paper = "paper";
     const scissors = "scissors";
 
-    // Computer's choice
 
     let randomChoice = Math.floor(Math.random() * 3);
 
@@ -57,7 +57,6 @@ function playGame() {
         }
     }
 
-    const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
 
     playRound(humanSelection, computerSelection);
