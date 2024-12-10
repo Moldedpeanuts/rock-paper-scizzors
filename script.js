@@ -60,7 +60,7 @@ btns.forEach(button => {
     });
 });
 
-
+const scoreBoard = document.querySelector("div");
 
 console.log(`You: ${humanScore} Computer: ${computerScore}`);
 
