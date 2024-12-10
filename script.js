@@ -20,8 +20,6 @@ function getComputerChoice() {
     }
 }
 
-const computerSelection = getComputerChoice();
-
 
 // Playing a single round
 
@@ -57,6 +55,7 @@ const btns = document.querySelectorAll("button");
 btns.forEach(button => {
     button.addEventListener('click', () => {
         humanSelection = button.textContent;
+        const computerSelection = getComputerChoice();
         playRound(humanSelection, computerSelection);
         const scoreBoard = document.querySelector("div");
         scoreBoard.textContent = `Score: Human ${humanScore} Computer ${computerScore}`;
