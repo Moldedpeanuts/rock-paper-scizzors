@@ -62,6 +62,8 @@ btns.forEach(button => {
 
 const scoreBoard = document.querySelector("div");
 
+scoreBoard.textContent = `The score is: Human ${humanScore} Computer ${computerScore}`;
+
 console.log(`You: ${humanScore} Computer: ${computerScore}`);
 
 
