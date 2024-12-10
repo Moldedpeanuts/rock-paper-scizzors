@@ -53,16 +53,19 @@ let humanSelection;
 
 const btns = document.querySelectorAll("button");
 
+
 btns.forEach(button => {
     button.addEventListener('click', () => {
         humanSelection = button.textContent;
         playRound(humanSelection, computerSelection);
+        const scoreBoard = document.querySelector("div");
+        scoreBoard.textContent = `Score: Human ${humanScore} Computer ${computerScore}`;
     });
 });
 
-const scoreBoard = document.querySelector("div");
 
-scoreBoard.textContent = `The score is: Human ${humanScore} Computer ${computerScore}`;
+
+
 
 
 
