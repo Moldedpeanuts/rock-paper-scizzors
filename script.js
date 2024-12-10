@@ -60,6 +60,15 @@ btns.forEach(button => {
         playRound(humanSelection, computerSelection);
         const scoreBoard = document.querySelector("div");
         scoreBoard.textContent = `Score: Human ${humanScore} Computer ${computerScore}`;
+        if (humanScore === 5) {
+            alert("You won! Congratulations!");
+            humanScore = 0;
+            computerScore = 0;
+        } else if (computerScore === 5) {
+            alert("You lose...better luck next time!");
+            humanScore = 0;
+            computerScore = 0;
+        }
     });
 });
 
