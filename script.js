@@ -9,7 +9,6 @@ const rock = "rock";
 const paper = "paper";
 const scissors = "scissors";
 
-
 function getComputerChoice() {
     let randomChoice = Math.floor(Math.random() * 3);
     if (randomChoice === 0) {
@@ -20,6 +19,9 @@ function getComputerChoice() {
         return (scissors);
     }
 }
+
+const computerSelection = getComputerChoice();
+
 
 // Playing a single round
 
@@ -47,9 +49,11 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-const computerSelection = getComputerChoice();
-const humanSelection = btn.addEventListener('click', playRound);
-const btn = document.querySelectorAll("button");
+let humanSelection;
+
+const btns = document.querySelectorAll("button");
+
+
 
 
 
