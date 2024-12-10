@@ -48,9 +48,9 @@ function playRound(humanChoice, computerChoice) {
 }
 
 const computerSelection = getComputerChoice();
+const humanSelection = btn.addEventListener('click', playRound);
 const btn = document.querySelectorAll("button");
 
-btn.addEventListener('click', playRound);
 
 
 console.log(`You: ${humanScore} Computer: ${computerScore}`);
