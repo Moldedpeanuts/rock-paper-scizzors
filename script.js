@@ -21,6 +21,8 @@ function getComputerChoice() {
     }
 }
 
+const btn = document.querySelector("button");
+
 
 // Playing a single round
 
