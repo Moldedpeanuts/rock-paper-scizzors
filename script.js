@@ -27,24 +27,24 @@ const computerSelection = getComputerChoice();
 
 function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
-        console.log(`It's a tie! Computer also chose ${humanChoice}`);
+        alert(`It's a tie! Computer also chose ${humanChoice}`);
     } else if (humanChoice === "paper" && computerChoice === "rock") {
-        console.log("You win! Paper beats rock!");
+        alert("You win! Paper beats rock!");
         humanScore++;
     } else if (humanChoice === "scissors" && computerChoice === "rock") {
-        console.log("You lose! Rock beats scissors!")
+        alert("You lose! Rock beats scissors!")
         computerScore++;
     } else if (humanChoice === "rock" && computerChoice === "paper") {
-        console.log("You lose! Paper beats rock!");
+        alert("You lose! Paper beats rock!");
         computerScore++;
     } else if (humanChoice === "scissors" && computerChoice === "paper") {
-        console.log("You win! Scissors beat paper!");
+        alert("You win! Scissors beat paper!");
         humanScore++;
     } else if (humanChoice === "rock" && computerChoice === "scissors") {
-        console.log("You win! Rock beats scissors!");
+        alert("You win! Rock beats scissors!");
         humanScore++;
     } else if (humanChoice === "paper" && computerChoice === "scissors") {
-        console.log("You lose! Scissors beat paper!");
+        alert("You lose! Scissors beat paper!");
         computerScore++;
     }
 }
@@ -64,7 +64,6 @@ const scoreBoard = document.querySelector("div");
 
 scoreBoard.textContent = `The score is: Human ${humanScore} Computer ${computerScore}`;
 
-console.log(`You: ${humanScore} Computer: ${computerScore}`);
 
 
 
