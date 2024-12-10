@@ -1,4 +1,4 @@
-console.log("Welcome to Rock-Paper-Scissors in the console!")
+console.log("Welcome to Rock-Paper-Scissors in the console!");
 
 let humanScore = 0;
 let computerScore = 0;
@@ -25,7 +25,6 @@ function playGame() {
         }
     }
 
-    }
 
     // Playing a single round
 
@@ -59,7 +58,6 @@ function playGame() {
 
     const computerSelection = getComputerChoice();
 
-  
 
     console.log(`You: ${humanScore} Computer: ${computerScore}`);
 }
