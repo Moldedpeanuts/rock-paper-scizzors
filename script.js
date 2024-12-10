@@ -59,8 +59,7 @@ function playGame() {
 
     const computerSelection = getComputerChoice();
 
-    playRound(humanSelection, computerSelection);
-
+  
 
     console.log(`You: ${humanScore} Computer: ${computerScore}`);
 }
