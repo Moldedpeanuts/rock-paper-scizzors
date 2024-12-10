@@ -25,12 +25,8 @@ function getComputerChoice() {
 // Playing a single round
 
 function playRound(humanChoice, computerChoice) {
-    if (humanChoice === "rock" && computerChoice === "rock") {
-        console.log("It's a tie! Computer also chose rock");
-    } else if (humanChoice === "paper" && computerChoice === "paper") {
-        console.log("It's a tie! Computer also chose paper");
-    } else if (humanChoice === "scissors" && computerChoice === "scissors") {
-        console.log("It's a tie! Computer also chose scissors")
+    if (humanChoice === computerChoice) {
+        console.log(`It's a tie! Computer also chose ${humanChoice}`);
     } else if (humanChoice === "paper" && computerChoice === "rock") {
         console.log("You win! Paper beats rock!");
         humanScore++;
