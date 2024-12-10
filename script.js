@@ -1,4 +1,4 @@
-console.log("Welcome to Rock-Paper-Scissors in the console!");
+alert("Welcome to Rock-Paper-Scissors in the console!");
 
 let humanScore = 0;
 let computerScore = 0;
